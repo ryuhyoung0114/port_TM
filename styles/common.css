@@ -1,25 +1,48 @@
 /* common.css */
-#wrap {}
-#wrap header {}
-#wrap header #top_bnr_wrap {}
+#wrap {
+    max-width:1920px; min-width:1028px; height:100vh;
+    margin:0 auto;
+}
+#wrap header {width:100%;}
+#wrap header #top_bnr_wrap {
+    background-color:#333; height:40px;
+}
 #wrap header #top_bnr_wrap .swiper-wrapper {}
 #wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide {}
 #wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr {}
-#wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr .top_bnr_contents {}
-#wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr .top_bnr_contents p  {}
+#wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr .top_bnr_contents {
+    height:100%; 
+    display:flex; align-items:center; justify-content:center;
+}
+#wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr .top_bnr_contents p {
+    font-size:0.75rem; color:#fff; font-weight:500; margin:0; text-align:center;
+}
 #wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr .top_bnr_close {}
 #wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr .top_bnr_close img {}
-#wrap header nav {}
-#wrap header nav #gnb {}
-#wrap header nav #gnb li {}
-#wrap header nav #gnb li a {}
-#wrap header nav #gnb li a img {}
-#wrap header h1 {}
-#wrap header h1 a {}
-#wrap header h1 a img {}
-#wrap header .user_menu {}
-#wrap header .user_menu a {}
-#wrap header .user_menu a img {}
+#wrap header .all_menu {
+    height:55px; background-color:aqua; padding:0 80px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+    position:relative;
+}
+#wrap header .all_menu nav {}
+#wrap header .all_menu nav #gnb {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+}
+#wrap header .all_menu nav #gnb li {}
+#wrap header .all_menu nav #gnb li a {padding:0 15px; height:100%;}
+#wrap header .all_menu nav #gnb li a img {}
+#wrap header .all_menu h1 {height:100%; line-height:100%;}
+#wrap header .all_menu h1 a {
+    width:130px; position:absolute;
+    left:50%; top:50%; transform:translate(-50%, -50%);
+}
+#wrap header .all_menu h1 a img {width:100%;}
+#wrap header .all_menu .user_menu {}
+#wrap header .all_menu .user_menu a {margin-right:30px;}
+#wrap header .all_menu .user_menu a:last-child {margin-right:0;}
+#wrap header .all_menu .user_menu a img {}
 /* ===========================================================================header */
 #wrap main .container {}
 #wrap main .container .title {}

@@ -62,8 +62,8 @@
 
 
 #wrap main .new_item {}
-#wrap main .new_item p {}
-#wrap main .new_item p img {width:100%;}
+#wrap main .new_item > p {}
+#wrap main .new_item > p > img {width:100%;}
 #wrap main .new_item .new_contents {}
 #wrap main .new_item .new_contents .new_info {}
 #wrap main .new_item .new_contents .new_info h1 {}
@@ -71,24 +71,22 @@
 #wrap main .new_item .new_contents .new_info .new_detail {}
 #wrap main .new_item .new_contents .new_info .new_detail p {}
 #wrap main .new_item .new_contents .new_info .new_detail p span {}
-#wrap main .new_item .new_contents .new_info .new_detail a {}
-#wrap main .new_item .new_contents .new_info .new_detail a img {width:100%;}
+#wrap main .new_item .new_contents .new_info .new_detail .more {}
+#wrap main .new_item .new_contents .new_info .new_detail .more img {width:100%;}
 #wrap main .new_item .new_contents .new_list {}
-#wrap main .new_item .new_contents .new_list .new_swiper {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .photo {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .photo img {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents h1 {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .color {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .color li {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .color li span {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .price_info {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .price_info .discount {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .price_info .price {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .price_info del {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .grade {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .swiper-slide .contents .grade img {width:100%;}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .slide1 {}
-#wrap main .new_item .new_contents .new_list .new_swiper .swiper-wrapper .slide2 {}
+#wrap main .new_item .new_contents .new_list .new_contents {}
+#wrap main .new_item .new_contents .new_list .new_contents .photo {}
+#wrap main .new_item .new_contents .new_list .new_contents .photo img {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents h2 {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .color {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .color span {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .color span p {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .price_info {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .price_info .discount {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .price_info .price {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .price_info del {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .grade {}
+#wrap main .new_item .new_contents .new_list .new_contents .contents .grade img {width:100%;}
+
+
