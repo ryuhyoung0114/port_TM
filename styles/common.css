@@ -1,4 +1,5 @@
 /* common.css */
+/* ===========================================================================header */
 #wrap {
     max-width:1920px; min-width:1028px; height:100vh;
     margin:0 auto;
@@ -36,7 +37,8 @@
 #wrap header .all_menu .user_menu a {margin-right:30px;}
 #wrap header .all_menu .user_menu a:last-child {margin-right:0;}
 #wrap header .all_menu .user_menu a img {}
-/* ===========================================================================header */
+
+/* ===========================================================================hero_bnr */
 #wrap main {}
 #wrap main #hero_bnr {}
 #wrap main #hero_bnr .hero_swiper_wrap {}
@@ -61,8 +63,8 @@
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p em {
     font-weight:500;
 }
-/* ===========================================================================hero_bnr */
 
+/* ===========================================================================공통 container */
 #wrap main .container {
     padding:140px 80px 0; width:100%; /* background-color: aquamarine; */}
 #wrap main .container .title {/* background-color:bisque; */ text-align: center;}
@@ -163,4 +165,71 @@
 }
 #wrap main .container .list_container .swiper .control_bar .page_bar .bar_bg {}
 #wrap main .container .list_container .swiper .control_bar .page_bar .bar_bg .bar {}
-/* ===========================================================================공통 container */
+
+/* ===========================================================================footer */
+#wrap footer * {color:#fff;}
+#wrap footer {
+    background-color:#333;
+    border-top:1px solid #fff; 
+}
+#wrap footer .footer_top {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    padding:0 300px;
+}
+#wrap footer .footer_top .fnb {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    gap:40px; padding:20px 0; 
+}
+#wrap footer .footer_top .fnb a {}
+#wrap footer .footer_top .footer_sns {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    gap:40px; 
+}
+#wrap footer .footer_top .footer_sns a {height:32px;}
+#wrap footer .footer_top .footer_sns a img {height:100%;}
+#wrap footer .footer_bottom {
+    border-top:1px solid #fff; padding:45px 0;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+#wrap footer .footer_bottom .footer_left {
+    padding-left:300px;
+}
+#wrap footer .footer_bottom .footer_left h1 {
+    font-size:0.875rem; font-weight:500;
+}
+#wrap footer .footer_bottom .footer_left address {
+    font-size:0.75rem; line-height:1.8;
+}
+#wrap footer .footer_bottom .footer_left address span {
+    background:#888; width:1px; height:8px;
+    margin:0 10px; display:inline-block;
+}
+#wrap footer .footer_bottom .footer_left address a {font-size:0.75rem; line-height:1.8;}
+#wrap footer .footer_bottom .footer_left p {font-size:0.75rem; line-height:1.8;}
+#wrap footer .footer_bottom .footer_left p a {font-size:0.75rem; line-height:1.8;}
+#wrap footer .footer_bottom .footer_right {
+    padding-right:325px;
+}
+#wrap footer .footer_bottom .footer_right h2 {
+    font-size:0.875rem; font-weight:500;
+}
+#wrap footer .footer_bottom .footer_right p {font-size:0.75rem;}
+#wrap footer .footer_bottom .footer_right p span {
+    background:#888; width:1px; height:8px;
+    margin:0 10px; display:inline-block;
+}
+#wrap footer .footer_bottom .footer_right .cs_number {
+    font-size:2.5rem; font-weight:500;
+    padding:10px 0;
+}
+#wrap footer .footer_bottom .footer_right .cs_time {margin-bottom:6px;}
+#wrap footer .footer_bottom .footer_right .cs_desc {
+    line-height:1.3; margin-bottom:15px;
+}
+#wrap footer .footer_bottom .footer_right .cs_btn {
+    display:flex; gap:15px;
+}
+#wrap footer .footer_bottom .footer_right .cs_btn a {
+    padding:8px 15px; border:1px solid #fff; display:inline-block;
+    line-height:1.3; font-size:0.75rem;
+}

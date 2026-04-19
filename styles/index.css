@@ -51,14 +51,22 @@
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .next svg {display:none;}
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar {}
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi {
-    display:flex; padding:12px 55px; 
+    display:flex; padding:12px 55px; position:relative;
 }
-#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet {
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-total::before {
+    content:''; display:block; position:absolute; left:50%; bottom:50%; transform:translate(-50%, -50%); z-index:50;
+    width:82px; height:1px; background:#b5b5b5; margin:0; opacity:1;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-current::after {
+    content:''; display:block; position:absolute; left:50%; bottom:50%; transform:translate(-50%, -50%); z-index:50;
+    width:82px; height:1px; background:#fff !important;
+}
+/* #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet {
     width:50%; height:1px; background:#d9d9d9; margin:0; opacity:1;
 }
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet-active {
     width:50%; height:1px; background:#888 !important;
-}
+} */
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .bar_bg {}
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .bar_bg .bar {}
 
@@ -327,32 +335,61 @@
     color:#333; font-size:0.75rem; font-weight:300;
 }
 /* ===========================================================================6. brand store */
-#wrap main .brand_store {}
-#wrap main .brand_store .title {}
+#wrap main .brand_store {
+    background-color:#f5f5f5; padding:80px 252.5px;
+}
+#wrap main .brand_store .title {margin-bottom:50px;}
 #wrap main .brand_store .title h1 {}
-#wrap main .brand_store .title p {}
-#wrap main .brand_store .store_search_wrap {}
+#wrap main .brand_store .title p {
+    color:#888; font-weight:300; font-size:0.875rem;
+}
+#wrap main .brand_store .store_search_wrap {
+    display:flex; flex-flow:row nowrap; gap:50px;
+}
 #wrap main .brand_store .store_search_wrap .store_map {}
 #wrap main .brand_store .store_search_wrap a img {}
 #wrap main .brand_store .store_search_wrap #store_search_form {}
-#wrap main .brand_store .store_search_wrap #store_search_form .tab_area {}
-#wrap main .brand_store .store_search_wrap #store_search_form .tab_area .tab {}
-#wrap main .brand_store .store_search_wrap #store_search_form .tab_area .tab.active {}
+#wrap main .brand_store .store_search_wrap #store_search_form .tab_area {
+    display:flex;
+}
+#wrap main .brand_store .store_search_wrap #store_search_form .tab_area .tab {
+    padding:20px 97.5px; color:#333;
+}
+#wrap main .brand_store .store_search_wrap #store_search_form .tab_area .tab.active {
+    background:#333; color:#fff; font-weight:500;
+}
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap {}
-#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search {
+    padding:25px 30px; background-color:#fff; color:#555; font-size:0.875rem; font-weight:300;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search #map_search_area {}
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search #map_search_area .button {}
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search #map_search_area .button img {}
-#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area {}
-#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result {}
-#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result .total {}
-#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result .total #use_place {}
-#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result .total #use_place label {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area {
+    padding:20px 30px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result {color:#333;}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result .total {
+    color:#333; font-weight:600; padding:0 5px;
+}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .filter_check {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .filter_check #use_place {margin-right:5px;}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .filter_check #use_place label {color:#333; font-size:0.75rem; font-weight:300;}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area {}
-#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list {
+    padding:30px; background:#fff;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; gap:60px;
+}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info {}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address {}
-#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address h2 {}
-#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address > p {}
-#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_number {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address h2 {color:#333; font-weight:500; margin-bottom:8px;}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address > p {
+    color:#555; font-size:0.875rem; font-weight:300; line-height:1.5;
+    margin-bottom:30px;
+}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_number {
+    color:#333; font-size:0.875rem; font-weight:500;
+}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list img {}

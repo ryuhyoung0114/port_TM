@@ -11,6 +11,7 @@ const mainSwiper = new Swiper(heroBnrSwiper, {
     pagination:{
         el:'#hero_bnr .control_bar .swiper-pagination',
         type:'fraction',
+        }
     },
     navigation:{
         prevEl:'#hero_bnr .control_bar .prev',
