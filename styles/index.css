@@ -197,7 +197,7 @@
 #wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color span {
     display:inline-block; width:10px; height:10px; border-radius:10px; background:#888;
 }
-#wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color span p {
+#wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color p {
     color:#333; font-weight:300; font-size:0.75rem;
 }
 #wrap main .new_item .new_container .new_list .new_contents:nth-child(2) .contents .price_info {
@@ -346,14 +346,14 @@
 #wrap main .brand_store .store_search_wrap {
     display:flex; flex-flow:row nowrap; gap:50px;
 }
-#wrap main .brand_store .store_search_wrap .store_map {}
+#wrap main .brand_store .store_search_wrap .store_map {flex:1;}
 #wrap main .brand_store .store_search_wrap a img {}
 #wrap main .brand_store .store_search_wrap #store_search_form {}
 #wrap main .brand_store .store_search_wrap #store_search_form .tab_area {
     display:flex;
 }
 #wrap main .brand_store .store_search_wrap #store_search_form .tab_area .tab {
-    padding:20px 97.5px; color:#333;
+    padding:20px; color:#333; width:50%;
 }
 #wrap main .brand_store .store_search_wrap #store_search_form .tab_area .tab.active {
     background:#333; color:#fff; font-weight:500;
