@@ -17,7 +17,8 @@ function initSwiper(target){
     return new Swiper(target, {
         slidesPerView:4,
         spaceBetween:30,
-        slidesPerGroup:1,
+        slidesPerGroup:4,
+        loop:true,
         pagination:{
             el:'.list_container .swiper .swiper-pagination',
         },
@@ -29,10 +30,12 @@ function initSwiper(target){
         breakpoints:{
             320:{
                 slidesPerView:2,
+                slidesPerGroup:2,
             },
             402:{
                 slidesPerView:3, //402 이상일때
                 spaceBetween:20,
+                slidesPerGroup:3,
             },
             1028:{
                 slidesPerView:4, //1028 이상일때

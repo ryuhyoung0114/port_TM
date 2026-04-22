@@ -38,8 +38,10 @@
     overflow:hidden;
     }
     #wrap main .new_item > p > img {height:100%;}
-    #wrap main .new_item .new_container .new_info .new_detail {
-        display:flex; justify-content:space-between; align-items:center;
-        padding:30px 0;
-    }
+    #wrap main .new_item .new_container .new_list .new_contents .photo {width:266px;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents {}
+    #wrap main .new_item .new_container .new_list .new_contents .contents > h2 {margin-bottom:35px;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents .price_info .discount {font-size:0.88rem;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents .price_info .price {font-size:0.88rem;}
+    /* ===========================================================================3. boncept */
 }
