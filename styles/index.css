@@ -228,7 +228,7 @@
     position:absolute; left:0; bottom:0; background:#D9D9D9;
 }
 /* ===========================================================================4. boncept */
-#wrap main .boncept {padding-bottom:140px;}
+#wrap main .boncept {padding:140px 0;}
 #wrap main .boncept .boncept_bnr {
     background-image:url(../images/product/boncept/boncept_bnr.jpg);
     background-position:center; background-size: cover;
@@ -247,33 +247,32 @@
     display:inline-block; color:#FFCDCF; font-size:1.38rem; margin-right:5px;
 }
 #wrap main .boncept .boncept_bnr .title p:last-child {margin-right:0;}
+#wrap main .boncept .more {padding:0 80px;}
+#wrap main .boncept .boncept_list {padding:0 80px;}
 
 /* ===========================================================================5. monthlyTONY. */
-#wrap main .magazine_wrap {
-    display:flex; padding:0 0 0 80px;
-}
+#wrap main .magazine_wrap {padding:0 0 0 80px;}
 #wrap main .magazine_wrap .monthly_tony {
     display:grid; align-items:start;
-    grid-template-columns:0.24fr 0.43fr 0.32fr;
+    grid-template-columns:0.5fr 800px 1.5fr;
     grid-template-areas:
         'title tonycover product'
         'list tonycover product';
-    grid-auto-rows:auto auto;
 }
 #wrap main .magazine_wrap .monthly_tony h1,
 #wrap main .magazine_wrap .monthly_tony h1 span {
     color:#333; font-family: "Fredoka", sans-serif;
 }
 #wrap main .magazine_wrap .monthly_tony h1 {
-    padding:94.5px 71.5px; font-weight:300; font-size:2.188rem;
-    grid-area:title; height: fit-content;
+    padding:94.5px 71.5px; font-weight:300; font-size:2.19rem;
+    grid-area:title;
 }
 #wrap main .magazine_wrap .monthly_tony h1 span {
-    font-weight:500; font-size:3.125rem; padding-left:5px;
+    font-weight:500; font-size:3.13rem; padding-left:5px;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap {
     display:flex; flex-flow:column nowrap;
-    grid-area:list; height: fit-content;
+    grid-area:list;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap .magazine_list {}
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li {
@@ -284,7 +283,7 @@
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active a {}
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active a p {
-    color:#333; margin-bottom:15px; font-size:0.875rem;
+    color:#333; margin-bottom:15px; font-size:0.88rem;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title {
     display:flex; flex-flow:row nowrap; justify-content:space-between;
@@ -292,7 +291,7 @@
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active a .magazine_title h2 {
     font-family: "Fredoka", sans-serif; font-weight:400; 
-    color:#333; font-size:1.125rem;
+    color:#333; font-size:1.13rem;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active a .magazine_title img {}
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a {}
@@ -308,25 +307,20 @@
     color:#333;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title img {height:100%}
-/* #wrap main .magazine_wrap .monthly_tony .magazine_bg {
-    display:flex; flex-flow:row nowrap; gap:40px;
-    padding:60px 60px 0 80px; background-color:#f5f5f5;
-    width:calc(100% - 450px);
-} */
 #wrap main .magazine_wrap .monthly_tony .magazine_bg {
     padding:60px 40px 0 60px; background-color:#f5f5f5;
-    grid-area:tonycover; width:100%; max-width:700px;
+    grid-area:tonycover; width:100%; height:100%;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_bg > p {}
 #wrap main .magazine_wrap .monthly_tony .magazine_bg .magazine_active {
     background:url(../images/product/monthly_TONY/monthly2603.png);
     background-position:center; background-size:cover;
     background-repeat:no-repeat;
-    width:100%;
+    width:100%; height:100%;
 }
-#wrap main .magazine_wrap .magazine .magazine_container {
+#wrap main .magazine_wrap .monthly_tony .magazine_container {
     display:flex; flex-flow:column nowrap; justify-content:space-between; 
-    align-items:flex-start; background-color:#f5f5f5;
+    align-items:flex-start; background-color:#f5f5f5; padding-top:60px; gap:46.5px;
     grid-area:product;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product {
@@ -342,10 +336,10 @@
     display:flex; flex-flow:row nowrap; gap:8px; margin-bottom:10px;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info .discount {
-    color:#FF6E86; font-size:0.938rem; font-weight:500;
+    color:#FF6E86; font-size:0.94rem; font-weight:500;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info .price {
-    color:#333; font-size:0.938rem;
+    color:#333; font-size:0.94rem;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info del {
     color:#888; font-size:0.75rem; font-weight:300;
@@ -364,14 +358,17 @@
 #wrap main .brand_store .title {margin-bottom:50px;}
 #wrap main .brand_store .title h1 {}
 #wrap main .brand_store .title p {
-    color:#888; font-weight:300; font-size:0.875rem;
+    color:#888; font-weight:300; font-size:0.88rem;
 }
 #wrap main .brand_store .store_search_wrap {
     display:flex; flex-flow:row nowrap; gap:50px;
+    width:100%; height:100%;
 }
-#wrap main .brand_store .store_search_wrap .store_map {flex:1;}
-#wrap main .brand_store .store_search_wrap a img {}
-#wrap main .brand_store .store_search_wrap #store_search_form {}
+#wrap main .brand_store .store_search_wrap .store_map {
+    background-image:url(../images/product/brand_store/map_img.png);
+    background-position:center; background-size:cover; flex:865;
+}
+#wrap main .brand_store .store_search_wrap #store_search_form {flex:500;}
 #wrap main .brand_store .store_search_wrap #store_search_form .tab_area {
     display:flex;
 }
@@ -383,7 +380,7 @@
 }
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap {}
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search {
-    padding:25px 30px; background-color:#fff; color:#555; font-size:0.875rem; font-weight:300;
+    padding:25px 30px; background-color:#fff; color:#555; font-size:0.88rem; font-weight:300;
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
 }
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search #map_search_area {}
@@ -397,22 +394,23 @@
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result .total {
     color:#333; font-weight:600; padding:0 5px;
 }
-#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .filter_check {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .filter_check {font-size:0.75rem;}
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .filter_check #use_place {margin-right:5px;}
 #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .filter_check #use_place label {color:#333; font-size:0.75rem; font-weight:300;}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area {}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list {
     padding:30px; background:#fff;
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; gap:60px;
+    border-bottom:1px solid #f5f5f5;
 }
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info {}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address {}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address h2 {color:#333; font-weight:500; margin-bottom:8px;}
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address > p {
-    color:#555; font-size:0.875rem; font-weight:300; line-height:1.5;
+    color:#555; font-size:0.88rem; font-weight:300; line-height:1.5;
     margin-bottom:30px;
 }
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_number {
-    color:#333; font-size:0.875rem; font-weight:500;
+    color:#333; font-size:0.88rem; font-weight:500;
 }
 #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list img {}

@@ -37,26 +37,139 @@
     background-position:center; background-size:cover; width:346px; height:726px;
     }
     #wrap main .new_item .new_container .new_info h1 {margin-bottom:30px;}
+    #wrap main .new_item .new_container .new_info .new_detail {align-items:flex-end;}
     #wrap main .new_item .new_container .new_list .new_contents .photo {width:266px;}
-    #wrap main .new_item .new_container .new_list .new_contents .contents {}
-    #wrap main .new_item .new_container .new_list .new_contents .contents > h2 {margin-bottom:35px;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents > h2 {margin-bottom:25px;}
     #wrap main .new_item .new_container .new_list .new_contents .contents .price_info .discount {font-size:0.88rem;}
     #wrap main .new_item .new_container .new_list .new_contents .contents .price_info .price {font-size:0.88rem;}
     /* ===========================================================================4. boncept */
-    #wrap main .boncept {padding-bottom:140px;}
+    #wrap main .boncept {padding:80px 0;}
     #wrap main .boncept .boncept_bnr {
         background-image:url(../images/tablet/boncept_bnr_tablet.png);
     }
     #wrap main .boncept .boncept_bnr .title::before {
-        content:''; display:block; width:250px; height:250px; 
-        background-image:url(../images/product/boncept/boncept.png);
-        background-position:center; background-size: cover;
-        opacity:0.2; position:absolute; left:108px; top:50%; transform:translateY(-50%);
+        width:250px; height:250px;
+        background-position:center; background-size:cover;
+        left:108px;
     }
-    #wrap main .boncept .boncept_bnr .title {padding:129px 0 129px 120px;
-    }
+    #wrap main .boncept .boncept_bnr .title {padding:129px 0 129px 120px;}
     #wrap main .boncept .boncept_bnr .title p {display:block; margin-bottom:8px; text-align:center;}
     #wrap main .boncept .boncept_bnr .title p:last-child {margin-bottom:0;}
     /* ===========================================================================5. monthlyTONY. */
-    
+    #wrap main .magazine_wrap {padding:0 0 0 0;}
+    #wrap main .magazine_wrap .monthly_tony {
+        grid-template-columns:1fr 560px;
+        grid-template-areas:
+            'title title'
+            'list tonycover'
+            'product product';
+    }
+    #wrap main .magazine_wrap .monthly_tony h1,
+    #wrap main .magazine_wrap .monthly_tony h1 span {text-align:center;}
+    #wrap main .magazine_wrap .monthly_tony h1 {padding-bottom:30px;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap {padding-left:80px;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a p {
+        color:#333; margin-bottom:15px; font-size:0.75rem; font-weight:300;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title {
+        display:flex; flex-flow:row nowrap; justify-content:space-between;
+        height:20px;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title h2 {
+        font-family: "Fredoka", sans-serif; font-weight:300; 
+        color:#333;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title img {height:100%}
+    #wrap main .magazine_wrap .monthly_tony .magazine_bg {padding:30px 30px 0;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_bg .magazine_active {
+        background:url(../images/tablet/monthly_tony_2603_tablet.png);
+        background-position:center; background-repeat: no-repeat;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_container {
+        flex-flow:row nowrap; justify-content:space-between; padding:30px 110px 80px;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product {
+        flex-flow:column nowrap; align-items:flex-start;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .photo {width:256px;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .photo img {width:100%;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents {}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents h2 {font-size:0.94rem;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info {
+        display:flex; flex-flow:row nowrap; gap:8px; margin-bottom:10px;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info .discount {font-size:0.88rem;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info .price {font-size:0.88rem;}
+    /* ===========================================================================6. brand store */
+    #wrap main .brand_store {padding:80px;}
+    #wrap main .brand_store .title {margin-bottom:40px;}
+    #wrap main .brand_store .store_search_wrap {gap:30px;}
+    #wrap main .brand_store .store_search_wrap .store_map {
+        background-image:url(../images/tablet/brand_store_tablet.png);
+        flex:488;
+    }
+    #wrap main .brand_store .store_search_wrap #store_search_form {flex:350;}
+    #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search {
+        padding:20px 30px; font-size:0.75rem;
+    }
+    #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area {}
+    #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list {padding:20px; gap:55px;}
+    /* ===========================================================================footer */
+    #wrap footer .footer_top {padding:0 80px;}
+    #wrap footer .footer_top .fnb {font-size:0.75rem; gap:30px; padding:10px 0;}
+    #wrap footer .footer_top .fnb a {}
+    #wrap footer .footer_top .footer_sns {gap:25px;}
+    #wrap footer .footer_top .footer_sns a {height:24px;}
+    #wrap footer .footer_bottom {padding:40px 80px;}
+    #wrap footer .footer_bottom .footer_left {padding-left:0;}
+    #wrap footer .footer_bottom .footer_left h1,
+    #wrap footer .footer_bottom .footer_right h2 {font-size:0.75rem;}
+    #wrap footer .footer_bottom .footer_left address span,
+    #wrap footer .footer_bottom .footer_right p span {height:6px;}
+    #wrap footer .footer_bottom .footer_left address,
+    #wrap footer .footer_bottom .footer_left address a,
+    #wrap footer .footer_bottom .footer_left p,
+    #wrap footer .footer_bottom .footer_left p a,
+    #wrap footer .footer_bottom .footer_right p,
+    #wrap footer .footer_bottom .footer_right .cs_btn a {font-size:0.63rem;}
+    #wrap footer .footer_bottom .footer_right {padding-right:0;}
+    #wrap footer .footer_bottom .footer_right .cs_number {font-size:1.25rem; font-weight:500;}
+    #wrap footer .footer_bottom .footer_right .cs_time {margin-bottom:6px;}
+}
+
+@media screen and (max-width:402px) {
+    #wrap header #top_bnr {height:30px;}
+    #wrap header .all_menu {height:50px; padding:0 15px;}
+    #wrap header .all_menu .user_menu a {margin-right:12px;}
+    #wrap header .all_menu h1 a img {width:118px;}
+    #wrap header .all_menu .user_menu {height:20px;}
+    #wrap header .all_menu .user_menu a img {height:100%;}
+    /* ===========================================================================1. hero_bnr */
+    #wrap main #hero_bnr .hero_swiper_wrap {}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {
+        padding:66px 0 81px 0;
+        display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center; gap:348px;
+    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {font-size:0.69rem; margin-bottom:8px;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p span {width:10px;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {font-size:2.19rem; line-height:1.2;  text-align:center; position:relative;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 br::after {content:'';}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 br {display:none;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p {font-size:0.75rem; text-align:center;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {
+    background-image:url(../images/hero_bnr/hero_bnr_m01.jpg);
+    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {
+        background-image:url(../images/hero_bnr/hero_bnr_m02.jpg);
+    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; flex-flow:column wrap; gap:10px; position:relative;}
+    /* ===========================================================================공통 container */
+    #wrap main .container {padding:80px 80px 0;}
+    #wrap main .container .list_container .swiper .swiper-wrapper {
+    width:calc((100% - 40px) / 3);
+    }
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .photo {height:350px;}
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .photo img {
+    height:100%; margin-bottom:20px;
+    }
 }
