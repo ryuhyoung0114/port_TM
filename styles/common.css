@@ -9,10 +9,8 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap {
     min-width:320px; margin:0 auto;
 }
-#wrap header {width:100%; position:relative;}
-#wrap header #top_bnr {
-    background-color:#333; height:40px; position:relative;
-}
+#wrap header {width:100%;}
+#wrap header #top_bnr {background-color:#333; height:40px; position:relative;}
 #wrap header #top_bnr .top_bnr_contents {}
 #wrap header #top_bnr .top_bnr_contents p {
     font-size:0.75rem; color:#fff; font-weight:500; margin:0; text-align:center; line-height:40px;
@@ -32,13 +30,34 @@ Any resemblance to real-world commercial sites is purely for design practice.
     display:flex; flex-flow:row nowrap;
     justify-content:center; align-items:center;
 }
-#wrap header .all_menu nav #gnb li {}
-#wrap header .all_menu nav #gnb li a {display:inline-block; padding:0 15px; line-height:55px;}
-#wrap header .all_menu nav #gnb li a:hover {border-bottom:2px solid #333;}
-#wrap header .all_menu nav #gnb li:first-child a:hover {border-bottom:0px solid #333;}
-#wrap header .all_menu nav #gnb li:last-child a:hover {border-bottom:2px solid #FF6E86;}
-#wrap header .all_menu nav #gnb li:last-child a {color:#FF6E86;}
-#wrap header .all_menu nav #gnb a img {height:100%;}
+#wrap header .all_menu nav #gnb > li {position:relative;}
+#wrap header .all_menu nav .depth_bg {
+    width:100%; height:55px; background-color:#fff;
+    position:absolute; left:0; top:100%; z-index:9; opacity:0.5;
+    display:none;
+}
+/* ==================================================== depth2 */
+#wrap header .all_menu nav #gnb > li > .gnb_depth2 {
+    /* background-color:beige; */ width:auto; height:100%;
+    position:absolute; left:0; top:100%; z-index:50;
+    display:flex; flex-flow:row nowrap;
+    display:none;
+}
+#wrap header .all_menu nav #gnb > li > .gnb_depth2 > li {
+    width:100%; 
+}
+#wrap header .all_menu nav #gnb > li > .gnb_depth2 > li > a {
+    padding:20.5px 15px; white-space:nowrap; line-height:55px;
+}
+/* ==================================================== depth1 */
+#wrap header .all_menu nav #gnb > li > a {
+    display:inline-block; padding:20.5px 15px; position:relative; z-index:10;
+}
+#wrap header .all_menu nav #gnb > li > a:hover {border-bottom:2px solid #333; font-weight:500;}
+#wrap header .all_menu nav #gnb > li:first-child > a:hover {border-bottom:0px solid #333;}
+#wrap header .all_menu nav #gnb > li:last-child > a:hover {border-bottom:2px solid #FF6E86; font-weight:500;}
+#wrap header .all_menu nav #gnb > li:last-child > a {color:#FF6E86;}
+#wrap header .all_menu nav #gnb > a > img {height:100%;}
 #wrap header .all_menu h1 {}
 #wrap header .all_menu h1 a {
     width:130px; position:absolute;

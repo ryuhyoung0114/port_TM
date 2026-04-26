@@ -280,10 +280,10 @@
 #wrap main .boncept .boncept_list {padding:0 80px;}
 
 /* ===========================================================================5. monthlyTONY. */
-#wrap main .magazine_wrap {padding:0 0 0 80px;}
+#wrap main .magazine_wrap {width:100%; padding:0 0 0 80px;}
 #wrap main .magazine_wrap .monthly_tony {
     display:grid; align-items:start;
-    grid-template-columns:0.5fr 800px 1.5fr;
+    grid-template-columns:0.7fr minmax(0, 800px) 1fr;
     grid-template-areas:
         'title tonycover product'
         'list tonycover product';
@@ -293,8 +293,8 @@
     color:#333; font-family: "Fredoka", sans-serif;
 }
 #wrap main .magazine_wrap .monthly_tony h1 {
-    padding:94.5px 71.5px; font-weight:300; font-size:2.19rem;
-    grid-area:title;
+    margin:0 auto; font-weight:300; font-size:2.19rem;
+    grid-area:title; padding:90px 30px;
 }
 #wrap main .magazine_wrap .monthly_tony h1 span {
     font-weight:500; font-size:3.13rem; padding-left:5px;
@@ -353,7 +353,7 @@
     grid-area:product;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product {
-    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center; gap:20px;
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center; gap:20px; flex:510;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .photo {}
 #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .photo img {}

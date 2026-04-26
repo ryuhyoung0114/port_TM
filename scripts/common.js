@@ -1,7 +1,10 @@
 // common.js
 const productSwiper = document.querySelectorAll('.container .list_container .swiper');
+const gnb = document.querySelectorAll('nav #gnb > li');
+const gnbDepth2 = document.querySelectorAll('nav #gnb li .gnb_depth2');
+const depthBg = document.querySelector('nav .depth_bg');
 
-console.log(productSwiper);
+console.log(productSwiper, gnb, gnbDepth2, depthBg);
 
 /* const bestSwiper = new Swiper(productSwiper[0],{
     slidesPerView:'auto',
@@ -50,4 +53,18 @@ function initSwiper(target){
 initSwiper(productSwiper[0]);
 initSwiper(productSwiper[1]);
 initSwiper(productSwiper[2]);
+
+//gnb 메뉴에 마우스 올렸을 때 관련 lnb 출력
+for(let i of gnb){
+    console.log(i); //gnb console 출력 확인
+    console.log(i.children[1]);
+    i.addEventListener('mouseover',function(){
+        i.children[1].style.display = 'flex';
+        depthBg.style.display = 'block';
+    })
+    i.addEventListener('mouseout',function(){
+        i.children[1].style.display = 'none';
+        depthBg.style.display = 'none';
+    })
+}
 

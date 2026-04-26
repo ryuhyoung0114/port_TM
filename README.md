@@ -18,6 +18,9 @@
     2. color 칩 색깔 채우기 / 디테일 수정 진행 예정
 `2026.04.25`
     1. 반응형 responsive.css 완료
+`2026.04.26`
+    1. header depth2 html, css, JS 완료
+    2. monthlyTONY. grid 비율 조정
 
 ### 어려운점 & 자주하는 실수
 
