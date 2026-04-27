@@ -5,10 +5,73 @@ This CSS is part of a student project.
 Any resemblance to real-world commercial sites is purely for design practice.
 */
 /* common.css */
-/* ===========================================================================header */
-#wrap {
-    min-width:320px; margin:0 auto;
+#wrap {min-width:320px; max-width:1920px; margin:0 auto;}
+/* ===========================================================================moblie_menu */
+#wrap .m_bg * {color:#333; font-size:0.88rem;}
+#wrap .m_bg {
+    width:400px; height:100vh; background-color:#fff;
+    position:absolute; left:0; top:0; z-index:500;
+    display:none;
 }
+#wrap .m_bg .m_side_wrap {
+    display:flex; flex-flow:column nowrap; gap:30px;
+    padding:50px;
+}
+#wrap .m_bg .m_side_wrap .top {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+#wrap .m_bg .m_side_wrap .top h1 {}
+#wrap .m_bg .m_side_wrap .top h1 img {}
+#wrap .m_bg .m_side_wrap .top .close {}
+#wrap .m_bg .m_side_wrap .top .close img {}
+#wrap .m_bg .m_side_wrap .m_gnb {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+#wrap .m_bg .m_side_wrap .m_gnb a {}
+#wrap .m_bg .m_side_wrap .m_gnb a:hover {color:#FF6E86;}
+#wrap .m_bg .m_side_wrap .m_gnb a:last-child {color:#FF6E86;}
+#wrap .m_bg .m_side_wrap .m_gnb a:last-child:hover {font-weight:500;}
+#wrap .m_bg .m_side_wrap .m_gnb span {width:1px; height:7px; background:#d9d9d9;}
+#wrap .m_bg .m_side_wrap .m_gnb .best {}
+#wrap .m_bg .m_side_wrap .m_gnb .new {}
+#wrap .m_bg .m_side_wrap .m_gnb .event {}
+#wrap .m_bg .m_side_wrap .category {}
+#wrap .m_bg .m_side_wrap .category > li {border-bottom:1px solid #f5f5f5;}
+#wrap .m_bg .m_side_wrap .category > li.active .cate_area {border-bottom:1px solid #FF6E86;}
+#wrap .m_bg .m_side_wrap .category > li.active .cate_area a {color:#FF6E86; font-weight:500;}
+#wrap .m_bg .m_side_wrap .category > li .cate_area:hover {border-bottom:1px solid #FF6E86;}
+#wrap .m_bg .m_side_wrap .category > li .cate_area a {line-height:44px; display:block;}
+#wrap .m_bg .m_side_wrap .category > li .cate_area a:hover {color:#FF6E86; font-weight:500;}
+#wrap .m_bg .m_side_wrap .category > li .cate_area {position:relative;}
+#wrap .m_bg .m_side_wrap .category > li .cate_area > a {line-height:44px; display:block;}
+#wrap .m_bg .m_side_wrap .category > li .cate_area > a:hover {color:#FF6E86; font-weight:500;}
+#wrap .m_bg .m_side_wrap .category > li .cate_area .cate_more {
+    position:absolute; right:0; top:50%; transform:translateY(-50%);
+}
+#wrap .m_bg .m_side_wrap .category > li .cate_area .cate_more img {}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth2_wrap {display:flex;}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth2_wrap .cate_depth2 {flex:1; display:none;}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth2_wrap .cate_depth2 > li {padding:15px 0;}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth2_wrap .cate_depth2 > li > a:hover {color:#FF6E86; font-weight:500;}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth2_wrap .cate_depth2 > li > a {
+    font-size:0.81rem; font-weight:300; display:block;
+}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth3_wrap {flex:1; display:none;}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth3_wrap .cate_depth3 {}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth3_wrap .cate_depth3 > li {padding:8px 0;}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth3_wrap .cate_depth3 > li > a {
+    font-weight:300; font-size:0.75rem;
+}
+#wrap .m_bg .m_side_wrap .category > li .cate_depth3_wrap .cate_depth3 > li > a:hover {color:#FF6E86;}
+#wrap .m_bg .m_side_wrap .m_user_menu {display:flex; flex-flow:column nowrap;}
+#wrap .m_bg .m_side_wrap .m_user_menu a {
+    display:flex; align-items:center; line-height:40px; font-size:0.75rem; gap:3px;
+}
+#wrap .m_bg .m_side_wrap .m_user_menu a:hover {color:#FF6E86;}
+#wrap .m_bg .m_side_wrap .m_user_menu a img {height:15px;}
+#wrap .m_bg .m_side_wrap .m_user_menu .m_login {}
+#wrap .m_bg .m_side_wrap .m_user_menu .m_cart {}
+/* ===========================================================================header */
 #wrap header {width:100%;}
 #wrap header #top_bnr {background-color:#333; height:40px; position:relative;}
 #wrap header #top_bnr .top_bnr_contents {}
@@ -16,9 +79,9 @@ Any resemblance to real-world commercial sites is purely for design practice.
     font-size:0.75rem; color:#fff; font-weight:500; margin:0; text-align:center; line-height:40px;
 }
 #wrap header #top_bnr .top_bnr_close {
-    position:absolute; right:0; top:50%; transform:translateY(-50%); width:24px;
+    position:absolute; right:80px; top:50%; transform:translateY(-50%); width:12px;
 }
-#wrap header #top_bnr #top_bnr_close img {width:100%;}
+#wrap header #top_bnr .top_bnr_close img {width:100%;}
 #wrap header .all_menu {
     height:55px; background-color:#fff; padding:0 80px;
     display:flex; flex-flow:row nowrap;

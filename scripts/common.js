@@ -68,3 +68,30 @@ for(let i of gnb){
     })
 }
 
+// 전체메뉴 클릭 시 전체메뉴 나타나기
+const mNavOpen = document.querySelector('nav #gnb li:nth-child(1)');
+const mBg = document.querySelector('.m_bg');
+const mNavClose = document.querySelector('.m_bg .m_side_wrap .top .close');
+
+console.log(mNavOpen, mBg, mNavClose);
+
+mNavOpen.addEventListener('click', function(){ mBgShow('block'); })
+mNavClose.addEventListener('click', function(){ mBgShow('none'); })
+
+//매개변수 상태(status)
+function mBgShow(status){return mBg.style.display = status;}
+
+// 기초 카테고리 클릭 시 하위 카테고리 나타나기
+const baseCate = document.querySelector('.category > li:nth-child(2)');
+const depth2 = document.querySelector('.category .cate_depth2_wrap .cate_depth2');
+const depth3 = document.querySelector('.category .cate_depth3_wrap .cate_depth3');
+
+console.log(baseCate, depth2, depth3);
+
+baseCate.addEventListener('click', function(){ 
+    baseShow(depth2, 'block'); 
+    baseCate.classList.add('active');
+})
+
+//매개변수 상태(status)
+function baseShow(object, status){return object.style.display = status;}

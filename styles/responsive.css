@@ -150,7 +150,9 @@
         padding:66px 0 81px 0;
         display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center; gap:348px;
     }
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {font-size:0.69rem; margin-bottom:8px;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {
+        display:flex; justify-content:center; font-size:0.69rem; margin-bottom:8px;
+    }
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p span {width:10px;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {font-size:2.19rem; line-height:1.2;  text-align:center; position:relative;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 br::after {content:'';}
