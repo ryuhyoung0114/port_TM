@@ -84,14 +84,48 @@ function mBgShow(status){return mBg.style.display = status;}
 // 기초 카테고리 클릭 시 하위 카테고리 나타나기
 const baseCate = document.querySelector('.category > li:nth-child(2)');
 const depth2 = document.querySelector('.category .cate_depth2_wrap .cate_depth2');
-const depth3 = document.querySelector('.category .cate_depth3_wrap .cate_depth3');
+const depth2List = depth2.querySelectorAll('li');
+const depth3 = document.querySelector('.category .cate_depth3_wrap');
+const depth3List = depth3.querySelectorAll('li')
 
-console.log(baseCate, depth2, depth3);
+console.log(baseCate, depth2, depth2List, depth3);
 
-baseCate.addEventListener('click', function(){ 
+/* baseCate.addEventListener('click', function(){ 
     baseShow(depth2, 'block'); 
     baseCate.classList.add('active');
-})
+}) */
+baseCate.addEventListener('click', function(){ 
+    if(baseCate.classList.contains('active')){
+        //이미 열려있으면 닫기
+        baseCate.classList.remove('active');
+        baseShow(depth2, 'none');
+        baseShow(depth3, 'none');
+    } else{
+        //닫혀있으면 열기
+        baseCate.classList.add('active');
+        baseShow(depth2, 'block');
+    }
+});
+
+for(let i = 0; i < depth2List.length; i++){
+    depth2List[i].addEventListener('click', function(e){
+        e.stopPropagation();
+    })
+}
+depth2List[0].addEventListener('click', function(){
+    if(depth2.classList.contains('active')){
+        //이미 열려있으면 닫기
+        depth2.classList.remove('active');
+        baseShow(depth3, 'none');
+    } else{
+        depth2.classList.add('active');
+        baseShow(depth3, 'block');
+    }
+    
+});
+depth3.addEventListener('click', function(e){
+    e.stopPropagation(); //부모 클릭 막기
+});
 
 //매개변수 상태(status)
 function baseShow(object, status){return object.style.display = status;}
