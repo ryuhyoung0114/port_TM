@@ -1,0 +1,6 @@
+#wrap {}
+#wrap main {}
+#wrap main .container {}
+#wrap main .container .boncept_title {}
+#wrap main .container .boncept_title h1 {}
+#wrap main .container .boncept_title p {}

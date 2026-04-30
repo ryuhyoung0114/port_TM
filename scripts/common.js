@@ -36,8 +36,13 @@ function initSwiper(target){
                 spaceBetween:15,
                 slidesPerGroup:2,
             },
-            402:{
-                slidesPerView:3, //402 이상일때
+            500:{
+                slidesPerView:2,
+                spaceBetween:15,
+                slidesPerGroup:2,
+            },
+            800:{
+                slidesPerView:3, //800 이상일때
                 spaceBetween:20,
                 slidesPerGroup:3,
             },

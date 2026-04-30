@@ -137,7 +137,7 @@
     #wrap footer .footer_bottom .footer_right .cs_time {margin-bottom:6px;}
 }
 
-@media screen and (max-width:402px) {
+@media screen and (max-width:800px) {
     #wrap header #top_bnr {height:30px;}
     #wrap header .all_menu {height:50px; padding:0 15px;}
     #wrap header .all_menu .user_menu a {margin-right:12px;}
@@ -146,25 +146,6 @@
     #wrap header .all_menu .user_menu a img {height:100%;}
     /* ===========================================================================1. hero_bnr */
     #wrap main #hero_bnr .hero_swiper_wrap {}
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {
-        padding:66px 0 81px 0;
-        display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center; gap:348px;
-    }
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {
-        display:flex; justify-content:center; font-size:0.69rem; margin-bottom:8px;
-    }
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p span {width:10px;}
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {font-size:2.19rem; line-height:1.2;  text-align:center; position:relative;}
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 br::after {content:'';}
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 br {display:none;}
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p {font-size:0.75rem; text-align:center;}
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {
-    background-image:url(../images/hero_bnr/hero_bnr_m01.jpg);
-    }
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {
-        background-image:url(../images/hero_bnr/hero_bnr_m02.jpg);
-    }
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; flex-flow:column wrap; gap:10px; position:relative;}
     /* ===========================================================================공통 container */
     #wrap main .container {padding:80px 15px 0;}
     #wrap main .container .title h1 {font-size:1.5rem;}
@@ -243,10 +224,10 @@
     #wrap main .boncept .more {padding:0 15px;}
     #wrap main .boncept .boncept_list {padding:0 15px;}
     /* ===========================================================================5. monthlyTONY. */
-    #wrap main .magazine_wrap {padding:0 0 0 0;}
+    #wrap main .magazine_wrap {display:block; padding:0;}
     #wrap main .magazine_wrap .monthly_tony {
         display:flex; flex-flow:column nowrap;
-        align-items:center;
+        justify-content:center; align-items:center;
     }
     #wrap main .magazine_wrap .monthly_tony h1 {font-size:1.25rem; padding:0 0 30px;}
     #wrap main .magazine_wrap .monthly_tony h1 span {font-size:2.19rem;}
@@ -258,9 +239,11 @@
     #wrap main .magazine_wrap .monthly_tony .magazine_bg .magazine_active {
         background:url(../images/mobile/monthly_tony_2603_mobile.png);
         max-width:402px; height:484px;
+        margin:0 auto;
     }
     #wrap main .magazine_wrap .monthly_tony .magazine_container {
         flex-flow:column nowrap; padding:20px 30px 0 30px; width:100%;
+        justify-content:center; align-items:flex-start;
     }
     #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product {
         flex-flow:row nowrap; align-items:center;
@@ -281,10 +264,10 @@
     #wrap main .brand_store {padding:80px 30px 50px;}
     #wrap main .brand_store .title {margin-bottom:30px;}
     #wrap main .brand_store .store_search_wrap {
-        flex-flow:column nowrap;}
+        flex-flow:column nowrap; max-width:800px; height:900px;}
     #wrap main .brand_store .store_search_wrap .store_map {
         background-image:url(../images/mobile/brand_store_mobile.png);
-        width:342px; height:300px;
+        width:100%; height:100%;
     }
     #wrap main .brand_store .store_search_wrap #store_search_form {flex:350;}
     #store_search_form .tab_area .tab,
@@ -326,4 +309,47 @@
     #wrap footer .footer_bottom .footer_right h2,
     #wrap footer .footer_bottom .footer_right .cs_number {display:inline-block; vertical-align:middle;
     line-height:16px;}
+}
+
+@media screen and (max-width:500px) {
+    #wrap main #hero_bnr .hero_swiper_wrap {height:746px;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {
+        padding:66px 0 81px 0;
+        display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center; gap:450px;
+    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title p {
+        display:flex; flex-flow:column nowrap; justify-content:center; font-size:0.8rem; margin-bottom:8px; gap:3px;
+    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p {
+        display:flex; justify-content:center; font-size:0.8rem; margin-bottom:8px;
+    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title p span {display:block;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p span {width:10px;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {font-size:2.19rem; line-height:1.2; text-align:center; position:relative;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 br::after {content:'';}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 br {display:none;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p {font-size:0.88rem; text-align:center;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {
+    background-image:url(../images/hero_bnr/hero_bnr_m01.jpg);
+    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {
+        background-image:url(../images/hero_bnr/hero_bnr_m02.jpg);
+    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; flex-flow:column wrap; gap:10px; position:relative;}
+    /* ===========================================================================5. monthlyTONY. */
+    #wrap main .magazine_wrap .monthly_tony {
+        display:flex; flex-flow:column nowrap;
+        max-width:500px;
+        width:100%;
+        margin:0 auto;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_bg .magazine_active {
+        background:url(../images/mobile/monthly_tony_2603_mobile.png);
+        max-width:402px; height:484px;
+    }
+    /* ===========================================================================6. brand store */
+    #wrap main .brand_store .store_search_wrap .store_map {
+        background-image:url(../images/mobile/brand_store_mobile.png);
+        width:100%; height:100%;
+    }
 }
