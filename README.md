@@ -21,6 +21,10 @@
 `2026.04.26`
     1. header depth2 html, css, JS 완료
     2. monthlyTONY. grid 비율 조정
+`2026.04.30`
+    1. 반응형 responsive 수정
+        * 800px 추가 및 수정
+    2. 서브페이지 리스트 html 완료, css 시작
 
 ### 어려운점 & 자주하는 실수
 
