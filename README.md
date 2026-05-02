@@ -29,6 +29,10 @@
     1. sub_list
         - html, 선택자 작업 완료
         - css 시작
+### 2026.05.03
+    1. sub_list
+        - css 완료, JS 탭 선택 시 해당 콘텐츠 나오기 작업 완료
+    2. index, responsive css flex 가변형으로 수정(stretch) 진행 중
 
 <hr>
 

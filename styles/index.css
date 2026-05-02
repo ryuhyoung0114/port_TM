@@ -175,13 +175,13 @@
 #wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide8 {}
 /* ===========================================================================3. new_item */
 #wrap main .new_item {
-    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; gap:30px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:stretch; gap:30px;
     padding:180px 80px 0;
 }
 #wrap main .new_item > p {
     background-image:url(../images/product/new_item/new_left_bnr.png);
     background-position:center; background-size:cover;
-    width:calc((100% - 30px) / 2); height:909px;
+    width:calc((100% - 30px) / 2);
 }
 #wrap main .new_item .new_container {}
 #wrap main .new_item .new_container .new_info {}
@@ -257,20 +257,20 @@
     position:absolute; left:0; bottom:0; background:#D9D9D9;
 }
 /* ===========================================================================4. boncept */
-#wrap main .boncept {padding:140px 0;}
+#wrap main .boncept {padding:140px 0; display:flex; flex-flow:column nowrap;
+align-items:stretch;}
 #wrap main .boncept .boncept_bnr {
     background-image:url(../images/product/boncept/boncept_bnr.jpg);
     background-position:center; background-size: cover;
     width:100%; position:relative; margin-bottom:50px;
-    display:flex;
 }
 #wrap main .boncept .boncept_bnr .title::before {
     content:''; display:block; width:300px; height:300px; 
     background-image:url(../images/product/boncept/boncept.png);
     background-position:center; background-size: cover;
-    opacity:0.2; position:absolute; left:427px; top:50%; transform:translateY(-50%);
+    opacity:0.2; position:absolute; left:22%; top:50%; transform:translateY(-50%);
 }
-#wrap main .boncept .boncept_bnr .title {padding:145.5px 0 145.5px 350px;}
+#wrap main .boncept .boncept_bnr .title {width:60%; padding:145.5px 0;}
 #wrap main .boncept .boncept_bnr .title h1 {color:#fff; font-size:2.50rem; margin-bottom:15px;}
 #wrap main .boncept .boncept_bnr .title p {
     display:inline-block; color:#FFCDCF; font-size:1.38rem; margin-right:5px;

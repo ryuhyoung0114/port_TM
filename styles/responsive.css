@@ -30,11 +30,11 @@
     }
     /* ===========================================================================3. new_item */
     #wrap main .new_item {
-    gap:30px; padding:80px 80px 0 0;
+    gap:30px; padding:80px 80px 0 0; justify-content:stretch;
     }
     #wrap main .new_item > p {
     background-image:url(../images/tablet/new_item_bnr_tablet.png);
-    background-position:center; background-size:cover; width:346px; height:726px;
+    background-position:center; background-size:cover; width:346px;
     }
     #wrap main .new_item .new_container .new_info h1 {margin-bottom:30px;}
     #wrap main .new_item .new_container .new_info .new_detail {align-items:flex-end;}
@@ -50,9 +50,8 @@
     #wrap main .boncept .boncept_bnr .title::before {
         width:250px; height:250px;
         background-position:center; background-size:cover;
-        left:108px;
     }
-    #wrap main .boncept .boncept_bnr .title {padding:129px 0 129px 120px;}
+    #wrap main .boncept .boncept_bnr .title {width:50%;}
     #wrap main .boncept .boncept_bnr .title p {display:block; margin-bottom:8px; text-align:center;}
     #wrap main .boncept .boncept_bnr .title p:last-child {margin-bottom:0;}
     /* ===========================================================================5. monthlyTONY. */
@@ -171,11 +170,11 @@
     #wrap main .container .list_container .swiper .control_bar .next {width:16px; height:16px;}
     /* ===========================================================================3. new_item */
     #wrap main .new_item {
-        display:flex; flex-flow:column nowrap;
+        display:flex; flex-flow:column nowrap; justify-content:stretch;
         gap:30px; padding:80px 0 0 0;
     }
     #wrap main .new_item > p {
-    background-image:url(../images/mobile/new_item_bnr_moblie.png); width:100%; height:230px; margin-bottom:20px;
+    background-image:url(../images/mobile/new_item_bnr_moblie.png); width:100%; height:300px; margin-bottom:20px;
     }
     #wrap main .new_item .new_container .new_info {
         display:flex; flex-flow:column nowrap;
@@ -208,19 +207,14 @@
     #wrap main .new_item .new_container .new_list .new_contents .contents .grade {width:10px;}
     /* ===========================================================================4. boncept */
     #wrap main .boncept {padding:80px 0;}
-    #wrap main .boncept .boncept_bnr {
-        background-image:url(../images/mobile/boncept_bnr_mobile.png);
-    }
     #wrap main .boncept .boncept_bnr .title::before {
-        width:120px; height:120px;
-        background-position:center; background-size:cover;
-        left:53px;
+        width:200px; height:200px;
+        background-position:center; background-size:cover; left:13.5%; 
     }
-    #wrap main .boncept .boncept_bnr .title {padding:63.5px 0 63.5px 35px;}
-    #wrap main .boncept .boncept_bnr .title p {display:block; margin-bottom:8px; text-align:center;}
+    #wrap main .boncept .boncept_bnr .title {padding:100px 0;}
     #wrap main .boncept .boncept_bnr .title p:last-child {margin-bottom:0;}
-    #wrap main .boncept .boncept_bnr .title h1 {font-size:1.5rem;}
-    #wrap main .boncept .boncept_bnr .title p {font-size:0.88rem;}
+    #wrap main .boncept .boncept_bnr .title h1 {font-size:2.2rem;}
+    #wrap main .boncept .boncept_bnr .title p {font-size:1.25rem;}
     #wrap main .boncept .more {padding:0 15px;}
     #wrap main .boncept .boncept_list {padding:0 15px;}
     /* ===========================================================================5. monthlyTONY. */
@@ -336,6 +330,18 @@
         background-image:url(../images/hero_bnr/hero_bnr_m02.jpg);
     }
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; flex-flow:column wrap; gap:10px; position:relative;}
+    /* =============================================================================3. boncept */
+    
+    #wrap main .boncept .boncept_bnr {
+        background-image:url(../images/mobile/boncept_bnr_mobile.png);
+    }
+    #wrap main .boncept .boncept_bnr .title::before {
+        width:130px; height:130px;
+        background-position:center; background-size:cover; left:13.5%; 
+    }
+    #wrap main .boncept .boncept_bnr .title {padding:60px 0;}
+    #wrap main .boncept .boncept_bnr .title h1 {font-size:1.2rem;}
+    #wrap main .boncept .boncept_bnr .title p {font-size:0.75rem;}
     /* ===========================================================================5. monthlyTONY. */
     #wrap main .magazine_wrap .monthly_tony {
         display:flex; flex-flow:column nowrap;

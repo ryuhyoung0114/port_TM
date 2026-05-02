@@ -1,37 +1,97 @@
+/* 
+ * GitHub Repository Phishing Alert Appeal & Project Verification
+이 페이지는 깃허브에서 발생한 피싱 경고 오탐지(False Positive)를 해명하고, 해당 코드가 순수한 학습 및 포트폴리오용임을 증명하기 위해 작성되었습니다.
+This CSS is part of a student project. 
+Any resemblance to real-world commercial sites is purely for design practice.
+*/
 #wrap {}
 #wrap main {widht:100%; padding:140px 0;}
-#wrap main .container {}
+#wrap main .container {padding:0;}
 #wrap main .container .boncept_title {padding-bottom:80px; text-align:center;}
 #wrap main .container .boncept_title h1 {
     font-family: "Fredoka", sans-serif; font-weight:500; 
     color:#333; font-size:2rem; margin-bottom:15px;
 }
-#wrap main .container .boncept_title p {display:inline-block; color:#888; font-weight:300; font-size:0.88rem;}
+#wrap main .container .boncept_title p {
+    display:inline-block; color:#888; font-weight:300; font-size:0.88rem;
+}
 #wrap main .container .boncept_wrap {}
 #wrap main .container .boncept_wrap .boncept_top {
     display:flex; justify-content:space-between; align-items:center;
+    position:relative; padding:0 80px; margin-bottom:70px;
 }
-#wrap main .container .boncept_wrap .boncept_top .boncept_left {}
+#wrap main .container .boncept_wrap .boncept_top::after {
+    content:''; display:block;
+    position:absolute; left:0; bottom:0; width:100%; height:1px; background:#333; z-index:1;
+}
+#wrap main .container .boncept_wrap .boncept_top .boncept_left {
+    display:flex; flex-flow:row nowrap; justify-content:flex-start;
+}
 #wrap main .container .boncept_wrap .boncept_top .boncept_left a {
-    padding:17px 45px; border:1px solid #d9d9d9; margin-right:0;
+    padding:17px 45px; border:1px solid #d9d9d9; border-bottom:none; border-radius:5px 5px 0 0;
+    color:#888; font-weight:300; font-size:0.88rem; position:relative; z-index:50;
 }
-#wrap main .container .boncept_wrap .boncept_top .boncept_left a.active {}
+#wrap main .container .boncept_wrap .boncept_top .boncept_left a.active {
+    border:1px solid #333; border-bottom:none; font-weight:500; color:#333;
+    z-index:51; background:#fff;
+}
 #wrap main .container .boncept_wrap .boncept_top .boncept_left .contents_tab {}
 #wrap main .container .boncept_wrap .boncept_top .boncept_right {}
-#wrap main .container .boncept_wrap .boncept_top .boncept_right a {}
-#wrap main .container .boncept_wrap .boncept_top .boncept_right a.active {}
+#wrap main .container .boncept_wrap .boncept_top .boncept_right a {
+    font-size:0.75rem; font-weight:300; color:#888; margin-right:20px;
+    line-height:20px; display:inline-block; z-index:4;
+}
+#wrap main .container .boncept_wrap .boncept_top .boncept_right a:last-child {margin-right:0;}
+#wrap main .container .boncept_wrap .boncept_top .boncept_right a.active {
+    font-size:0.88rem; font-weight:500; color:#333;
+}
 #wrap main .container .boncept_wrap .boncept_top .boncept_right .contents_align {}
-#wrap main .container .boncept_wrap .product_wrap {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_bnr {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product {}
+#wrap main .container .boncept_wrap .product_wrap {
+    display:flex; flex-flow:row wrap; gap:30px; align-items:stretch;
+    padding:0 80px;
+}
+#wrap main .container .boncept_wrap .product_wrap .bc_bnr1 {
+    background-image:url(../images/product/boncept/boncept_bnr1.png);
+}
+#wrap main .container .boncept_wrap .product_wrap .bc_bnr2 {
+    background-image:url(../images/product/boncept/boncept_bnr2.png);
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_bnr {
+    width:calc((100% - 90px) / 4);
+    background-position:center; background-size:cover; background-repeat:no-repeat;
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product {
+    width:calc((100% - 90px) / 4);
+    display:flex; flex-flow:column nowrap;
+}
 #wrap main .container .boncept_wrap .product_wrap .boncept_product > a {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product > a > img {}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product > a > img {
+    width:100%; margin-bottom:20px;
+}
 #wrap main .container .boncept_wrap .product_wrap .boncept_product .contents {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents h2 {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .price_info {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .price_info .discount {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .price_info .price {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .price_info del {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .grade {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .grade img {}
-#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .grade p {}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents h2 {
+    color:#333; font-weight:500; margin-bottom:30px;
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .price_info {
+    display:flex; gap:8px; margin-bottom:10px;
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .price_info .discount {
+    color:#FF6E86; font-weight:500; font-size:0.94rem;
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .price_info .price {
+    color:#333; font-size:0.94rem;
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .price_info del {
+    color:#888; font-weight:300; font-size:0.75rem;
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .grade {
+    display:flex; align-items:center; width:14px;
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .grade img {
+    width:100%; margin-right:2px;
+}
+#wrap main .container .boncept_wrap .product_wrap .boncept_product .contents .grade p {
+    color:#333; font-weight:300; font-size:0.75rem;
+}
+#wrap main .container .boncept_wrap .PDRN_wrap {}
+#wrap main .container .boncept_wrap .retinal_wrap {}
