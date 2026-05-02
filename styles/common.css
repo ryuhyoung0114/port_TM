@@ -137,12 +137,12 @@ Any resemblance to real-world commercial sites is purely for design practice.
 /* ===========================================================================hero_bnr */
 #wrap main {}
 #wrap main #hero_bnr {}
-#wrap main #hero_bnr .hero_swiper_wrap {}
+#wrap main #hero_bnr .hero_swiper_wrap {position:relative;}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {
-    padding:295.5px 0 295.5px 318px;
+    position:absolute; left:15%; top:50%; transform:translateY(-50%);
 }
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {

@@ -5,20 +5,21 @@
     #wrap header .all_menu nav #gnb li {display:none;}
     #wrap header .all_menu nav #gnb li:first-child {display:block;}
     /* ===========================================================================1. hero_bnr */
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {
-        padding:288px 0 288px 122px;
-    }
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {font-size:0.75rem; margin-bottom:12px;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p span {width:10px;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {font-size:3.13rem; margin-bottom:30px;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p {font-size:0.75rem;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {
     background-image:url(../images/hero_bnr/hero_bnr_t01.jpg);
+    aspect-ratio: 1028 / 800;
     }
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {
         background-image:url(../images/hero_bnr/hero_bnr_t02.jpg);
+        aspect-ratio: 1028 / 800;
     }
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; flex-flow:column wrap; gap:10px; position:relative;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; flex-flow:column nowrap; gap:0; margin-bottom:15px;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title p {margin-bottom:5px;}
     /* ===========================================================================공통 container */
     #wrap main .container {padding:80px 80px 0;}
     #wrap main .container .list_container .swiper .swiper-wrapper {
@@ -306,10 +307,10 @@
 }
 
 @media screen and (max-width:500px) {
-    #wrap main #hero_bnr .hero_swiper_wrap {height:746px;}
+    #wrap header #top_bnr .top_bnr_close {right:15px;}
+    #wrap main #hero_bnr .hero_swiper_wrap {}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {
-        padding:66px 0 81px 0;
-        display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:center; gap:450px;
+        display:flex; flex-flow:column nowrap; justify-content:center; align-items:center; gap:410px;
     }
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title p {
         display:flex; flex-flow:column nowrap; justify-content:center; font-size:0.8rem; margin-bottom:8px; gap:3px;
@@ -317,7 +318,6 @@
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p {
         display:flex; justify-content:center; font-size:0.8rem; margin-bottom:8px;
     }
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title p span {display:block;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p span {width:10px;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {font-size:2.19rem; line-height:1.2; text-align:center; position:relative;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 br::after {content:'';}
@@ -325,11 +325,13 @@
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p {font-size:0.88rem; text-align:center;}
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {
     background-image:url(../images/hero_bnr/hero_bnr_m01.jpg);
+    aspect-ratio: 500 / 746; 
     }
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {
         background-image:url(../images/hero_bnr/hero_bnr_m02.jpg);
+        aspect-ratio: 500 / 746;
     }
-    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; flex-flow:column wrap; gap:10px; position:relative;}
+    #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {gap:0; justify-content:center; align-items:center;}
     /* =============================================================================3. boncept */
     
     #wrap main .boncept .boncept_bnr {

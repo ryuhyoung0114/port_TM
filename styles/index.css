@@ -2,11 +2,12 @@
 /* ===========================================================================1. hero_bnr */
 #wrap main {}
 #wrap main #hero_bnr {}
-#wrap main #hero_bnr .hero_swiper_wrap {position:relative;}
+#wrap main #hero_bnr .hero_swiper_wrap {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {
     background-image:url(../images/hero_bnr/hero_bnr01.jpg);
-    background-size:cover; background-position:center;
+    background-size:contain; background-position:center; background-repeat:no-repeat;
+    aspect-ratio: 1920 / 800;
 }
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text {}
@@ -20,17 +21,14 @@
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text > p em {color:#fff;}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {
     background-image:url(../images/hero_bnr/hero_bnr02.jpg);
-    background-size:cover; background-position:center;
+    background-size:contain; background-position:center; background-repeat:no-repeat;
+    aspect-ratio: 1920 / 800;
 }
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; gap:10px; position:relative;}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title p {color:#fff;}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title p::after {
-    content:''; display:block; width:10px; height:10px;
-    position:absolute; left:260px; top:0;
-}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title span {color:#F9E2CF; font-weight:500;}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title h1 {color:#fff;}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text > p {color:#F9E2CF;}
