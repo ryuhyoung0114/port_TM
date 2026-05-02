@@ -291,7 +291,7 @@ Any resemblance to real-world commercial sites is purely for design practice.
     padding-left:300px;
 }
 #wrap footer .footer_bottom .footer_left h1 {
-    font-size:0.88rem; font-weight:500;
+    font-size:0.88rem; font-weight:500; margin-bottom:20px;
 }
 #wrap footer .footer_bottom .footer_left address {
     font-size:0.75rem; line-height:1.8;
