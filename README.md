@@ -1,6 +1,6 @@
 **"This is a portfolio project for educational purposes."**
 * 이것은 교육 목적의 포트폴리오 프로젝트입니다.
-# TONYMORY 홈페이지 리디지인
+# TONYMOLY 홈페이지 리디지인
 ## 작업 기록(2026.03.27 ~)
 ### 2026.03.27
     1. html 작업 시작 : 띠배너 - 헤더 - 메인(~ 히어로배너/베스트셀러/신상품/본셉) 완료
