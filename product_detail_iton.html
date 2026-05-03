@@ -1,0 +1,364 @@
+<!--
+ * GitHub Repository Phishing Alert Appeal & Project Verification
+이 페이지는 깃허브에서 발생한 피싱 경고 오탐지(False Positive)를 해명하고, 해당 코드가 순수한 학습 및 포트폴리오용임을 증명하기 위해 작성되었습니다.
+ * Project: Portfolio Prototype
+ * Warning: This html does not process actual transactions or user credentials.
+The similarity to the actual commercial site is purely for design practice.
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="./images/icons/tonymoly_icon_192.png" type="image/x-icon">
+    <title>portfolio_TONYMORY</title>
+    <!-- 플러그인, 웹글꼴 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 개별 사용자 디자인 파일 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/product_detail_iton.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/color_chip.css">
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/product_detail_iton.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="m_bg">
+            <div class="m_side_wrap">
+                <div class="top">
+                    <h1><img src="./images/common/tonymoly_mobile.png" alt=""></h1>
+                    <a href="javascript:void(0)" class="close"><img src="./images/common/close.png" alt=""></a>
+                </div>
+                <div class="m_gnb">
+                    <a href="#" class="best">베스트</a>
+                    <span></span>
+                    <a href="#" class="new">신상품</a>
+                    <span></span>
+                    <a href="#" class="event">이벤트</a>
+                    <span></span>
+                    <a href="#" class="cafetony">카페토니</a>
+                </div>
+                <ul class="category">
+                    <li>
+                        <div class="cate_area"><a href="./sub_list.html">본셉 BONCEPT</a></div>
+                    <li>
+                        <div class="cate_area">
+                            <a href="#">기초</a>
+                            <a href="#" class="cate_more"><img src="./images/common/more_down.png" alt=""></a>
+                        </div>
+                        <div class="cate_depth2_wrap">
+                            <ul class="cate_depth2">
+                                <li><a href="#">스킨케어</a></li>
+                                <li><a href="#">클렌징</a></li>
+                                <li><a href="#">마스크, 팩</a></li>
+                                <li><a href="#">선케어</a></li>
+                                <li><a href="#">스킨케어소품</a></li>
+                            </ul>
+                            <div class="cate_depth3_wrap">
+                                <ul class="cate_depth3">
+                                    <li><a href="#">스킨/케어</a></li>
+                                    <li><a href="#">로션/에멀젼</a></li>
+                                    <li><a href="#">에센스/세럼/앰플</a></li>
+                                    <li><a href="#">크림</a></li>
+                                    <li><a href="#">아이케어</a></li>
+                                    <li><a href="#">미스트</a></li>
+                                    <li><a href="#">세트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cate_area">
+                            <a href="#">메이크업</a>
+                            <a href="#" class="cate_more"><img src="./images/common/more_down.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cate_area">
+                            <a href="#">바디/헤어</a>
+                            <a href="#" class="cate_more"><img src="./images/common/more_down.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cate_area">
+                            <a href="#">옴므</a>
+                            <a href="#" class="cate_more"><img src="./images/common/more_down.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cate_area">
+                            <a href="#">온라인 전용</a>
+                            <a href="#" class="cate_more"><img src="./images/common/more_down.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cate_area"><a href="#">공식몰 단독 전용</a></div>
+                    </li>
+                    <li>
+                        <div class="cate_area"><a href="#">주토피아 콜라보</a></div>
+                    </li>
+                </ul>
+                <div class="m_user_menu">
+                    <a href="#" class="m_login"><img src="./images/common/mypage.png" alt="">로그인/회원가입</a>
+                    <a href="#" class="m_cart"><img src="./images/common/cart.png" alt="">장바구니</a>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div id="top_bnr">
+                <a href="#" class="top_bnr_contents">
+                    <p>앱 다운로드 시 2,000P 즉시 지급!</p>
+                </a>
+                <a href="#" class="top_bnr_close"><img src="./images/icons/close_wh.png" alt=""></a>
+            </div>
+            <div class="all_menu">
+                <nav>
+                    <ul id="gnb">
+                        <li><a href="#"><img src="./images/common/menu.png" alt="menu"></a></li>
+                        <li><a href="./sub_list.html">본셉</a></li>
+                        <li>
+                            <a href="#">베스트</a>
+                            <ul class="gnb_depth2">
+                                <li><a href="#">기초</a></li>
+                                <li><a href="#">메이크업</a></li>
+                                <li><a href="#">바디/헤어</a></li>
+                                <li><a href="#">라이프</a></li>
+                                <li><a href="#">옴므</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">신상품</a>
+                            <ul class="gnb_depth2">
+                                <li><a href="#">기초</a></li>
+                                <li><a href="#">메이크업</a></li>
+                                <li><a href="#">바디/헤어</a></li>
+                                <li><a href="#">라이프</a></li>
+                                <li><a href="#">옴므</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                            <ul class="gnb_depth2">
+                                <li><a href="#">혜택</a></li>
+                                <li><a href="#">할인</a></li>
+                                <li><a href="#">체험단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">카페토니</a>
+                            <ul class="gnb_depth2">
+                                <li><a href="#">월간토니</a></li>
+                                <li><a href="#">뷰티레시피</a></li>
+                                <li><a href="#">커피톡</a></li>
+                                <li><a href="#">영상톡</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="depth_bg"></div>
+                </nav>
+                <h1>
+                    <a href="./index.html"><img src="./images/common/logo.png" alt="tonymoly"></a>
+                </h1>
+                <div class="user_menu">
+                    <a href="#"><img src="./images/common/search.png" alt="search"></a>
+                    <a href="#"><img src="./images/common/mypage.png" alt="mypage"></a>
+                    <a href="#"><img src="./images/common/cart.png" alt="cart"></a>
+                </div>
+            </div>
+        </header><!-- ====================================================header -->
+        <main>
+            <div class="detail_wrap">
+                <div class="detail_top">
+                    <div class="detail_cate">
+                        <a href="#">홈</a>
+                        <img src="#" alt="">
+                        <a href="#">메이크업</a>
+                        <img src="#" alt="">
+                        <a href="#">아이</a>
+                        <img src="#" alt="">
+                        <a href="#" class="active">아이섀도우</a>
+                    </div>
+                    <div class="product_contents">
+                        <div class="product_img">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1"><img src="#" alt=""></div>
+                                    <div class="swiper-slide slide2"><img src="#" alt=""></div>
+                                    <div class="swiper-slide slide3"><img src="#" alt=""></div>
+                                    <div class="swiper-slide slide4"><img src="#" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_thum">
+                            <a href="#" class="active"><img src="#" alt=""></a>
+                            <a href="#"><img src="#" alt=""></a>
+                            <a href="#"><img src="#" alt=""></a>
+                            <a href="#"><img src="#" alt=""></a>
+                        </div>
+                        <div class="product_info">
+                            <div class="info_top">
+                                <div class="title">
+                                    <div class="title_top">
+                                        <div class="product_name">
+                                            <h1>아이톤 싱글 아이섀도우</h1>
+                                            <p>디테일하게 설계된 퍼스널 싱글 아이섀도우 33컬러</p>
+                                        </div>
+                                        <div class="like_share">
+                                            <a href="#"><img src="./images/product_detailpage/iton/icon/like.png" alt="관심상품"></a>
+                                            <a href="#"><img src="./images/product_detailpage/iton/icon/share.png" alt="공유하기"></a>
+                                        </div>
+                                    </div>
+                                    <div class="title_bottom">
+                                        <div class="price_info">
+                                            <span class="discount">30%</span>
+                                            <p class="price">23,100원</p>
+                                            <del>33,000원</del>
+                                        </div>
+                                        <div class="grade">
+                                            <img src="./images/icons/star.png" alt="">
+                                            <p>5.0(33)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="benefit">
+                                    <div class="benefit_price">
+                                        <div class="price_left">
+                                            <h2>혜택 적용가</h2>
+                                            <a href="#">
+                                                <p>신규 가입 시</p>
+                                            </a>
+                                        </div>
+                                        <div class="price_right">
+                                            <span class="discount">30%</span>
+                                            <p class="price">23,100원</p>
+                                            <a href="#"><img src="./images/icons/down.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="benefit_info">
+                                        <h2>사은품 안내</h2>
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide slide1">
+                                                    <a href="#" class="benefit_wrap">
+                                                        <img src="#" alt="">
+                                                        <div class="benefit_name">
+                                                            <h3>미니니 에코백</h3>
+                                                            <div class="benefit_btn">
+                                                                <p>이벤트 상품 구매 시 1:1 증정</p>
+                                                                <a href="#" class="benefit_more">더보기</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="control_btn">
+                                                <div class="swiper-button-prev prev"></div>
+                                                <div class="swiper-button-next next"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shipping">
+                                    <h2>배송</h2>
+                                    <div class="shipping_contents">
+                                        <dl>
+                                            <dt><img src="./images/product_detailpage/iton/icon/shipping.png" alt="배송">오늘출발</dt>
+                                            <dd>13시 이전 주문 결제 시</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>무료배송</dt>
+                                            <dd>2만원 이상 무료배송</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#" class="product_form">
+                                <div class="option_list">
+                                    <div class="option_box"></div>
+                                    <div class="selected_item">
+                                        <h2>401 밀크티라떼</h2>
+                                        <div class="quantity">
+                                            <button type="button" id="product_add" class="number_btn"><img src="./images/product_detailpage/iton/icon/add.png" alt="증가"></button>
+                                            <span>
+                                                <label for="product"></label>
+                                                <input type="number" id="product" name="product" value="1">
+                                            </span>
+                                            <button type="button" id="product_remove" class="number_btn"><img src="./images/product_detailpage/iton/icon/remove.png" alt="감소"></button>
+                                        </div>
+                                        <p class="price">6,400원</p>
+                                    </div>
+                                </div>
+                                <div class="total">
+                                    <h3>상품금액합계</h3>
+                                    <p class="total_price">6,400원</p>
+                                </div>
+                                <div class="btn_wrap">
+                                    <button type="button" class="cart_btn">장바구니</button>
+                                    <button type="submit" class="buy_btn">구매하기</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ai_review"></div>
+                </div>
+                <div class="detail_bottom"></div>
+            </div>
+        </main><!-- ========================================================main -->
+        <footer>
+            <div class="footer_top">
+                <div class="fnb">
+                    <a href="#">회사소개</a>
+                    <a href="#">서비스이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">사이트맵</a>
+                    <a href="#">공지사항</a>
+                </div>
+                <div class="footer_sns">
+                    <a href="#"><img src="./images/icons/ic-footer-kakao.png" alt="카카오톡"></a>
+                    <a href="#"><img src="./images/icons/ic-footer-x.png" alt="x"></a>
+                    <a href="#"><img src="./images/icons/ic-footer-tiktok.png" alt="틱톡"></a>
+                    <a href="#"><img src="./images/icons/ic-footer-insta.png" alt="인스타"></a>
+                    <a href="#"><img src="./images/icons/ic-footer-youtube.png" alt="유튜브"></a>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_left">
+                    <h1>(주)토니모리</h1>
+                    <address>
+                        서울특별시 서초구 남부순환로 2557<span></span>
+                        사업자번호 : 114-86-53270 <a href="#">사업자 정보확인</a><br>
+                        호스팅사업자 : (주)토니모리<span></span>
+                        통신판매업신고번호: 제2015-서울서초-0615호<span></span>
+                        대표이사 : 김승철<span></span>개인정보보호책임자 : 김승철
+                    </address>
+                    <p>(주)나이스페이 구매안전서비스<br>고객님의 안전거래를 위해 현금 거래에 대해 나이스페이 에스크로서비스를 이용하실 수 있습니다.<a href="#">서비스 가입사실확인</a></p>
+                    <p>&copy;TONYMOLY. ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="footer_right">
+                    <h2>고객센터 이용안내</h2>
+                    <p class="cs_number">080-356-2222</p>
+                    <p class="cs_time">평일 10:00~17:00 (주말 및 공휴일 휴무)<span></span>점심 12:00~14:00</p>
+                    <p class="cs_desc">주말 및 공휴일은 1:1문의하기를 이용해 주세요.<br>업무가 시작되면 바로 처리해 드리겠습니다.</p>
+                    <div class="cs_btn">
+                        <a href="#">자주묻는질문</a>
+                        <a href="#">1:1문의</a>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- ====================================================footer -->
+    </div>
+</body>
+</html>

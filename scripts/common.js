@@ -134,3 +134,5 @@ depth3.addEventListener('click', function(e){
 
 //매개변수 상태(status)
 function baseShow(object, status){return object.style.display = status;}
+
+// header
