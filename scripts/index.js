@@ -63,3 +63,6 @@ function cateShow(){
     bestSellerTitle[0].style.display = 'none';
     bestSellerTitle[1].style.display = 'block';
 }; */
+
+// 사용자 입력값 검증 부재(brand_store_map_search_area)
+const input = document.querySelector('#map_search_area');

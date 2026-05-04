@@ -5,7 +5,7 @@ This CSS is part of a student project.
 Any resemblance to real-world commercial sites is purely for design practice.
 */
 #wrap {}
-#wrap main {widht:100%; padding:140px 0;}
+#wrap main {width:100%; padding:140px 0;}
 #wrap main .container {padding:0;}
 #wrap main .container .boncept_title {padding-bottom:80px; text-align:center;}
 #wrap main .container .boncept_title h1 {

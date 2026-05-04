@@ -4,11 +4,11 @@
 #wrap main #hero_bnr {}
 #wrap main #hero_bnr .hero_swiper_wrap {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {
-    background-image:url(../images/hero_bnr/hero_bnr01.jpg);
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide {
     background-size:contain; background-position:center; background-repeat:no-repeat;
     aspect-ratio: 1920 / 800;
 }
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {background-image:url(../images/hero_bnr/hero_bnr01.jpg);}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title {}
@@ -19,11 +19,7 @@
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title h1 {color:#fff;}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text > p {color:#E3F3CD;}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text > p em {color:#fff;}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {
-    background-image:url(../images/hero_bnr/hero_bnr02.jpg);
-    background-size:contain; background-position:center; background-repeat:no-repeat;
-    aspect-ratio: 1920 / 800;
-}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {background-image:url(../images/hero_bnr/hero_bnr02.jpg);}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text {}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title {}
