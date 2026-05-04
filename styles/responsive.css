@@ -159,7 +159,7 @@
         display:none;
     }
     #wrap main .container .boncept_wrap .boncept_top .boncept_right a.active {
-        display:flex;
+        display:flex; font-size:0.75rem;
     }
 }
 @media screen and (max-width:800px) {
